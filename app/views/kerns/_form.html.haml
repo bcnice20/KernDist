@@ -12,5 +12,8 @@
   .field
     = f.label :version
     = f.text_field :version
+  .field
+    = f.label :device
+    = f.collection_select :device_id, Device.all, :id, :name
   .actions
     = f.submit 'Save'
