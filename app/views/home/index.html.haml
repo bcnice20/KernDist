@@ -1,2 +1,6 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+#selectDevice
+	%h1 Select Your Device
+
+	%select
+		= @devices.each do |d|
+			%option= d.name

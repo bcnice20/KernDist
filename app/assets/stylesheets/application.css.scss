@@ -8,6 +8,10 @@
 
 $w: 780px;
 
+body#main {
+	background: grey;
+}
+
 #container {
 	width: $w;
 	height: auto;
@@ -22,6 +26,11 @@ $w: 780px;
 #content {
 	width: $w;
 	height: 400px;
+
+	#selectDevice {
+		padding-top: 100px;
+		text-align: center;
+	}
 }
 
 #footer {
