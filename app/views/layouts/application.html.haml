@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title KernDist
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #container
+      #banner
+        = image_tag("banner.png")
+      #content
+        = yield
+      #footer
+        &copy 2011 Thebcblends

@@ -5,3 +5,26 @@
  *= require_self
  *= require_tree . 
 */
+
+$w: 780px;
+
+#container {
+	width: $w;
+	height: auto;
+	margin: auto;
+}
+
+#banner {
+	width: $w;
+	height: 200px;
+}
+
+#content {
+	width: $w;
+	height: 400px;
+}
+
+#footer {
+	width: $w;
+	height: 150px;
+}

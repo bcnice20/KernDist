@@ -15,5 +15,7 @@
   .field
     = f.label :device
     = f.collection_select :device_id, Device.all, :id, :name
+  .field
+    = f.file_field :kernzip
   .actions
     = f.submit 'Save'
