@@ -1,0 +1,21 @@
+%h1 Listing kerns
+
+%table
+  %tr
+    %th Name
+    %th Version
+    %th
+    %th
+    %th
+
+  - @kerns.each do |kern|
+    %tr
+      %td= kern.name
+      %td= kern.version
+      %td= link_to 'Show', kern
+      %td= link_to 'Edit', edit_kern_path(kern)
+      %td= link_to 'Destroy', kern, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Kern', new_kern_path

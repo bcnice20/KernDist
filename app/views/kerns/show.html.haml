@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @kern.name
+%p
+  %b Version:
+  = @kern.version
+
+= link_to 'Edit', edit_kern_path(@kern)
+\|
+= link_to 'Back', kerns_path

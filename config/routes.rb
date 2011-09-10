@@ -1,4 +1,6 @@
 KernDist::Application.routes.draw do
+  resources :kerns
+
   get "home/index"
 
   # The priority is based upon order of creation:
