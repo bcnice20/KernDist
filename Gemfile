@@ -17,6 +17,8 @@ end
 gem 'jquery-rails'
 gem 'mongoid'
 gem 'bson_ext'
+gem 'paperclip'
+gem "mongoid-paperclip", :require => "mongoid_paperclip"
 
 group :test do
   # Pretty printed test output
