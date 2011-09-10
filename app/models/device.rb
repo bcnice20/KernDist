@@ -1,7 +1,7 @@
 class Device
   include Mongoid::Document
-  field :name, :type => String
-
+  
+  field :name
   key :name
 
   references_many :kerns
